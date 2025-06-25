@@ -24,3 +24,33 @@ cd seu-repositorio
 
 # Instale as dependências
 npm install
+
+```
+
+##▶️ Executar o Projeto
+```bash
+npm run serve
+```
+O projeto será servido localmente em algo como http://localhost:8080
+
+## 🧱 Estrutura do Projeto
+
+- `App.vue`: Componente principal que organiza a estrutura da aplicação, gerencia o estado das tarefas e distribui os dados entre os componentes.
+- `components/FormTask.vue`: Componente responsável pelo formulário de adicionar nova tarefa, com input e botão.
+- `components/KanbanColumn.vue`: Componente reutilizável que representa uma coluna do Kanban, recebe um título, lista de tarefas e classe de estilo como props.
+- `main.js`: Arquivo principal que inicializa a aplicação Vue 3 e configura o uso do BootstrapVue 3.
+
+##✍️ Como Usar
+1.Digite o nome de uma nova tarefa no campo de texto.
+
+2.Pressione Enter ou clique em "adicionar".
+
+3.A tarefa será adicionada à coluna Pendente.
+
+4.Você pode arrastar e soltar tarefas entre as colunas para alterar o status.
+
+## 📌 Observações
+⚠️O estado das tarefas não é persistido (não há uso de banco de dados ou localStorage).
+
+Este projeto foi desenvolvido com o intuito exclusivo de **aprendizado e treino prático** com Vue.js. 
+
